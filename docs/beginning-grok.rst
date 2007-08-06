@@ -1,0 +1,96 @@
+===============
+Beginning Grok
+===============
+
+:Author: Pradeep Kishore Gowda
+:Contact: pradeep.gowda@gmail.com
+:revision: 001
+:Copyright: 2007 PKG.
+
+.. contents:: Table of Contents
+
+Introductions
+=============
+
+Grok is ... 
+
+Installing Grok
+===============
+
+Download Workingenv.py from `Python cheeseshop <http://cheeseshop.python.org/pypi/workingenv.py>`_ .
+
+Run workingenv to create a working environment in your home folder::
+
+    $ python2.4 workingenv.py pycode
+    $ cd pycode
+    $ chmod 755 bin/activate
+
+Here I'll be trying to create a time tracking application called `dogfood`. ::
+
+    $ bin/easy_install grokproject
+    $ bin/grokproject dogfood
+
+Enter sensible defaults to the prompts::
+
+    Enter module (Name of a demo Python module placed into the package) ['app.py']: 
+    Enter user (Name of an initial administrator user): admin
+    Enter passwd (Password for the initial administrator user): admin123
+    Enter eggs_dir ['/home/pradeep/buildout-eggs']: 
+    Creating directory ./dogfood
+    Downloading zc.buildout...
+    Invoking zc.buildout...
+
+This will create a working area (more appropriately, a zope instance) called `dogfood`. Lets look inside and see what files are created by the zc.buildout system::
+
+    bin  buildout.cfg  develop-eggs  parts  setup.py  src
+
+`bin` directory contains `buildout`, `test` and `zopectl`. 
+
+`zopectl` is the command which runs the zope application server. This will start a webserver, in which the newly created application runs. Lets try to run it::
+    
+
+    $ bin/zopectl start
+
+The zope app server runs on port 8080 as a deamon. Since we are learning to use the system, it may be a good idea to see what goes on underneath the hood. So, we will will run the zope server in `fg` (foreground) mode. First stop the server ::
+
+    $ bin/zopectl stop
+    $ bin/zopectl fg
+
+.. Hint :: If you want to change the port number, edit parts/zopectl/zope.conf
+   
+
+Visit `http://localhost:8080/`. You will be presented with a popup window. Enter the admin/password you entered while creating the zope instance. 
+
+Oh! what is this? The buildout script has created a dummy application (The `Hello world` application, if you please). You can install an instance of this application in your server by giving a *name* to it. Lets say, `woof` and click on `Add`. The newly created application instance is now available at `http://localhost:8080/woof`. Click on the URL. You will see a welcome message. That's it! you have created your first application in grok. And you thought Zope3 means fighting with XML config files, eh?
+
+
+Fleshing out the application
+============================
+
+Lets create the application. The major idea behind Grok/Zope3 is the Zope Component Architecture (ZCA). 
+Zope component architecture consists of `zope.interface` and `zope.component`. Essentially, a lot of development can be abstracted as interaction between software components via defined *interfaces*. 
+XXX Explain the advantages of Interfaces here.. 
+
+So, lets define an interface for the different types of Objects we have in mind ::
+
+    Project
+      Task
+         Report
+
+
+
+Colophon
+========
+
+This book is written using `reStructured Text <http://docutils.sourceforge.net>`_ . This file can be converted to a printable book by applying ::
+
+  $ rst2latex beginning-grok.rst > beginning-grok.tex
+  $ pdflatex beginning-grok.tex
+
+You can read/print the resulting pdf file using any PDF reader.
+
+
+Online 
+======
+
+The latest version of this book can be found at `<http://www.btbytes.com/grokbook/>`_
