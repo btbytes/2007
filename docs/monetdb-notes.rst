@@ -26,7 +26,10 @@ Monetdb is a fast database based on the Colum oriented database principles. Down
 Install some dependencies first::
 
     $ sudo apt-get install autoconf automake libtool gawk 
+    $ sudo apt-get install libxml1 libxml2 libxml2-dev libxml-dev
 
 Run the bundled installation script::
-    $ ./monetdb-install.sh --prefix=$HOME --build=$HOME/tmp --enable-sql --enable-xquery --enable-optimise 
+
+    $ ./monetdb-install.sh --prefix=$HOME --build=$HOME/tmp \
+      --enable-sql --enable-xquery --enable-optimise 
 
