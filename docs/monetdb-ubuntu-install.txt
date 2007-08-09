@@ -24,6 +24,7 @@ Introduction
 Monetdb is a fast database based on the Colum oriented database principles. Download it from
 http://monetdb.cwi.nl.
 
-Run the bundled installation script::
+Run the bundled installation script ::
+
     ./monetdb-install.sh --prefix=$HOME --build=$HOME/tmp --enable-sql --enable-xquery --enable-optimise 
 
