@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# gen-sa.py
+# gen-sa.py http://btbytes.googlecode.com/svn/trunk/sqlrecipes/gen-sa.py
 # Copyright (C) 2007, Pradeep Kishore Gowda pradeep.gowda@gmail.com
 #
 # Script to generate SQLAlchemy Table definition from ML Dataset's metadata
@@ -38,12 +38,12 @@ def main(fname):
     l.startswith(' ') or len(l)<2)]
     dclass_domain = lines[0].split(',')    
     attrs = read_attrs(lines)
-
-    tblname = fname.split('.')[0]
+    tblname = fname.split('/')[-1]
+    tblname = tblname.split('.')[0]
     print "#Table Definition"
     txt =  '%(tblname)s = Table("%(tblname)s", engine,\n' % ({'tblname':tblname})
     for a in attrs:
-        txt += '    Column("%s", "%s"),\n' % (a['name'], a['type'])
+        txt += '    Column("%s", %s),\n' % (a['name'], a['type'])
     txt = txt[:-2] #remove the trailing comma
     txt += '\n)'
     print txt
