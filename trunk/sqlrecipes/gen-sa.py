@@ -41,7 +41,7 @@ def main(fname):
     tblname = fname.split('/')[-1]
     tblname = tblname.split('.')[0]
     print "#Table Definition"
-    txt =  '%(tblname)s = Table("%(tblname)s", engine,\n' % ({'tblname':tblname})
+    txt =  '%(tblname)s = Table("%(tblname)s", metadata,\n' % ({'tblname':tblname})
     for a in attrs:
         txt += '    Column("%s", %s),\n' % (a['name'], a['type'])
     txt = txt[:-2] #remove the trailing comma
