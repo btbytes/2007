@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# tblgen.py
+# tblgen.py http://btbytes.googlecode.com/svn/trunk/sqlrecipes/gentbl.py
 # Copyright (C) 2007, Pradeep Kishore Gowda btbytes@gmail.com
 #
 # Script to create SQL table creation statements from 
