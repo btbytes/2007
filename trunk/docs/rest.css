@@ -162,6 +162,12 @@ dt {
 
 /* pradeep */
 
-div.hint {
-background:#ffc;
+.admonition-title{
+                 background: #f93;
+                 font-size:1.2em;
+                 margin-top:0em;
+}
+div.hint, div.tip, div.attention {
+                                   border: solid 1px #999;
+                                   background:#ffc;
 }

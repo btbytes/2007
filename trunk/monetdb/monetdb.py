@@ -1,6 +1,6 @@
 # monetdb.py
 # Copyright (C) 2005, 2006, 2007 Michael Bayer mike_mp@zzzcomputing.com
-# Monetdb module by Pradeep Gowda pradeep@btbytes.com
+# Monetdb module by Pradeep Gowda pradeep.gowda@gmail.comm
 # This module is part of SQLAlchemy and is released under
 # the MIT License: http://www.opensource.org/licenses/mit-license.php
 

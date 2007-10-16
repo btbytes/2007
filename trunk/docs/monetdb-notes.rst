@@ -25,6 +25,8 @@ Monetdb is a fast database based on the Colum oriented database principles. Down
 `<http://monetdb.cwi.nl>`_.
 Install some dependencies first::
 
+.. code-block:: bash
+
     $ sudo apt-get install autoconf automake libtool gawk 
     $ sudo apt-get install libxml1 libxml2 libxml2-dev libxml-dev
 
