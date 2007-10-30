@@ -1,6 +1,7 @@
 body{
   background-color:#cccccc;
 }
+
 #doc, #doc2, #doc3, #doc4{
   background-color:#ffffff;
   border-top: solid 8px #CC0000;
@@ -12,9 +13,6 @@ body{
 a{
   color:#CC0000;
   text-decoration:none;  
-}
-a:hover{
-  text-decoration: underline;
 }
 
 h1, h2, h3{
@@ -46,16 +44,21 @@ h3{
   margin-top:0em;
   border-bottom: solid 1px #cccccc;
 }
+
 #ft{
   margin-bottom:0em;
   padding: 1em;
   border-top: solid 1px #cccccc;
 }
 
-
 pre{
   background-color:#eeeeee;
   padding:1em;
+}
+
+#nav {
+  padding-left:0;
+  margin-left:0;
 }
 
 #nav li{

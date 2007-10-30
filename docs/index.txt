@@ -1,8 +1,14 @@
 restindex
     crumb: Home
     format: html
-    page-title: rest2web Tutorial Website
+    page-title: bonfire
     file: bonfire.css
     file: pygments_style.css
 /restindex
 
+<div id="menu">
+ <#
+        print_details(default_section)
+ #>
+<p/>
+</div><!-- #menu -->
