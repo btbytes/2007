@@ -59,9 +59,19 @@ pre{
 #nav {
   padding-left:0;
   margin-left:0;
+  background:#ffffee;
 }
+#nav ul{
+padding-left: 0;
+margin-left: 0;
+float: left;
+width: 100%;
+font-family: arial, helvetica, sans-serif;
+}
+#nav ul li { display: inline; }
 
 #nav li{
+  text-indent:1px;
   list-style-type:none;
   display:inline;
   padding-right:0.0em;
