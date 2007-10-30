@@ -1,37 +1,44 @@
+restindex
+    crumb: Home
+    format: rest
+    page-title: Get Grokking 
+/restindex
+
 ===============
 Get Grokking
 ===============
 
-:Author: Pradeep Kishore Gowda
-:Contact: pradeep.gowda@gmail.com
-:revision: 001
-:Copyright: 2007 PKG.
-
-.. contents:: Table of Contents
+.. contents::
 
 Introductions
-=============
+-------------
 
 Grok is ... 
 
 Installing Grok
-===============
+---------------
 
 Download Workingenv.py from `Python cheeseshop <http://cheeseshop.python.org/pypi/workingenv.py>`_ .
 
-Run workingenv to create a working environment in your home folder::
+Run workingenv to create a working environment in your home folder.
+
+.. sourcecode:: bash
 
     $ python2.4 workingenv.py pycode
     $ cd pycode
     $ chmod 755 bin/activate
 
-Here I'll be trying to create a time tracking application called `dogfood`. ::
+Here I'll be trying to create a time tracking application called `dogfood`.
+
+.. sourcecode:: bash
 
     $ bin/easy_install grokproject
     $ bin/grokproject dogfood
 
-Enter sensible defaults to the prompts::
+Enter sensible defaults to the prompts
 
+.. sourcecode:: python
+ 
     Enter module (Name of a demo Python module placed into the package) ['app.py']: 
     Enter user (Name of an initial administrator user): admin
     Enter passwd (Password for the initial administrator user): admin123
@@ -65,7 +72,7 @@ Oh! what is this? The buildout script has created a dummy application (The `Hell
 
 
 Fleshing out the application
-============================
+----------------------------
 
 Lets create the application. The major idea behind Grok/Zope3 is the Zope Component Architecture (ZCA). 
 Zope component architecture consists of `zope.interface` and `zope.component`. Essentially, a lot of development can be abstracted as interaction between software components via defined *interfaces*. 
@@ -80,7 +87,7 @@ So, lets define an interface for the different types of Objects we have in mind 
 
 
 Colophon
-========
+--------
 
 This book is written using `reStructured Text <http://docutils.sourceforge.net>`_ . This file can be converted to a printable book by applying ::
 
@@ -90,7 +97,24 @@ This book is written using `reStructured Text <http://docutils.sourceforge.net>`
 You can read/print the resulting pdf file using any PDF reader.
 
 
+.. sourcecode:: python
+   
+    class Hello:
+        def __init__(self):
+            self.foo = 'bar'
+
+abcdefgh
+
+.. sourcecode:: c
+
+    #include <stdio.h>
+    
+    int main(){
+        printf("Hello world!");
+    }
+
+
 Online 
-======
+------
 
 The latest version of this book can be found at `<http://www.btbytes.com/grokbook/>`_
