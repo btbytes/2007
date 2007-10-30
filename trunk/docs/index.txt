@@ -1,0 +1,8 @@
+restindex
+    crumb: Home
+    format: html
+    page-title: rest2web Tutorial Website
+    file: bonfire.css
+    file: pygments_style.css
+/restindex
+
