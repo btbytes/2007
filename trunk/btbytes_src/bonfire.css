@@ -35,6 +35,9 @@ h3{
  font-weight:bold;
 }
 
+img.embed{
+   padding:0.5em;
+}
 #hd, #ft, #bd{
   padding-left:1em;
   padding-right:1em;

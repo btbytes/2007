@@ -1,16 +1,51 @@
 restindex
-    crumb: Home Bonfire
+    crumb: Bonfire
     format: rest
     page-title: Bonfire
-    file: bonfire.css
-    file: pygments_style.css
 /restindex
 
 =======================================
 Bonfire: website publishing with smarts
 =======================================
 
-    Bonfire(n), a large outdoor fire that is lighted as a signal or in celebration. 
+.. image:: ../images/begonia-sm.jpg
+   :align: left
+   :class: embed
 
-Bonfire is a website publishing system for publishing good looking, standard compliant, easy to maintain websites. Bonfire is most useful for people who maintain non-chronological, regularly updated website. If you are looking for a blogging system, Bonfire may not be a good choice at this juncture. However, if you are looking for a personal/semi-professional site where you want to put home page, curriculam vitae, research, software documentation etc., Bonfire will you help you put up a nice looking site out of the box. 
-Bonfire
+Bonfire is a website publishing system for publishing good looking, standard compliant, easy to maintain websites. Bonfire is most useful for people who maintain content-heavy, regularly updated, geek-operated(thats you!) website. If you are looking to build a personal/semi-professional site where you want to put home page, curriculam vitae, research, software documentation etc., Bonfire will you help you put up a nice looking site out of the box. 
+
+
+Bonfire is a good choice for software documentation and software product home pages.
+
+
+Bonfire uses popular, well-designed components to achieve its goals. There is nothing in Bonfire, which you cannot figure out yourself, given a few hours of self-study. Bonfire saves that trouble for you. Let us see what makes Bonfire.
+
+
+What gets thrown into Bonfire
+-----------------------------
+
+`ReStructuredText(reST) <http://docutils.sourceforge.net>`_ is a powerful markdown language to produce professional looking documents. You write the documents in a plain text format, which inturn can be converted to HTML, TeX and other formats. Bonfire concentrates on the HTML output of reST. 
+
+
+`Rest2Web <http://www.voidspace.org.uk/python/rest2web/index.html>_` is a tool which allows one to convert content in reST format to HTML with the aid of a template which can be customised for the users requirement.
+
+
+`Yahoo UI Libraries(YUI) <http://developer.yahoo.com>`_ is a collection of HTML layout, css and javascript libraries. YUI allows one to produce webpages which are guranteed to look the same across browsers. Bonfire uses YUI to produce semantically correct markup without the use of tables for layouts. This is a big win, for it seperates content and presentation. 
+
+
+`Pygments <http://pygments.org>`_ is a python library which takes a pice of source code and renders it with syntax highlighting. All your code snippets can look their best now.
+Apart from putting all this together, Bonfire also provides neat styling which takes care of further "eye-candy" aspects.
+
+    So, Bonfire = reST + rest2web  + YUI + Pygments + Styling (with detailed instructions for every step of the way.)
+
+How to install and use Bonfire
+-------------------------------
+
+ 1. Install docutils. On ubuntu ``sudo apt-get install python-docutils``
+ 2. Install rest2web, ``sudo apt-get install rest2web``
+ 
+If you want code to be rendered with sytax highlight, 
+
+ 1. Install pygments, ``sudo easy_install pygments``
+
+
