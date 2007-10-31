@@ -9,6 +9,13 @@ a{
   color:#0000CC;
 }
 
+#hd, #ft, #bd{
+padding-left:1em;
+padding-right:1em;
+}
 
+#hd{
+margin-top:0em;
+}
 
 
