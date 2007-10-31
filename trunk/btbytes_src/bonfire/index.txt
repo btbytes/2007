@@ -1,0 +1,16 @@
+restindex
+    crumb: Home Bonfire
+    format: rest
+    page-title: Bonfire
+    file: bonfire.css
+    file: pygments_style.css
+/restindex
+
+=======================================
+Bonfire: website publishing with smarts
+=======================================
+
+    Bonfire(n), a large outdoor fire that is lighted as a signal or in celebration. 
+
+Bonfire is a website publishing system for publishing good looking, standard compliant, easy to maintain websites. Bonfire is most useful for people who maintain non-chronological, regularly updated website. If you are looking for a blogging system, Bonfire may not be a good choice at this juncture. However, if you are looking for a personal/semi-professional site where you want to put home page, curriculam vitae, research, software documentation etc., Bonfire will you help you put up a nice looking site out of the box. 
+Bonfire
