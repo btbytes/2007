@@ -1,0 +1,14 @@
+restindex
+    crumb: Home
+    format: html
+    page-title: bonfire
+    file: bonfire.css
+    file: pygments_style.css
+/restindex
+
+<div id="menu">
+ <#
+        print_details(default_section)
+ #>
+<p/>
+</div><!-- #menu -->
