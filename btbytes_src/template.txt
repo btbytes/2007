@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/reset/reset-min.css"> 
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/base/base-min.css"> 
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/fonts/fonts-min.css"> 
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/grids/grids-min.css"> 
+<link rel="stylesheet" type="text/css" href="<% path_to_root %>bonfire.css"> 
+<link rel="stylesheet" type="text/css" href="<% path_to_root %>pygments_style.css"> 
+
+<title><% title %></title>
+
+</head>
+<body>
+  <div id="doc2" class="yui-t5">
+    <div id="hd"> 
+      <h1>PG</h1>
+    </div>
+
+    <div id="bd">
+        <div id="nav"><ul><# print_crumbs(breadcrumbs) #></ul></div>
+        <a name="startcontent" id="startcontent"></a>
+
+        <% body %>
+
+       </div>
+   
+       <div id="ft">
+            <p><a href="#startcontent">Return to Top</a><br />
+            <small>
+                Page last modified <strong><% modtime %></strong>.
+            </small>
+            </p>
+        </div>
+
+</body>
+</html>
