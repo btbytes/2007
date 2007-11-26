@@ -1,6 +1,7 @@
 restindex
     crumb: Home
     format: html
+    target: index2.html
     page-title: bonfire
     file: bonfire.css
     file: pygments_style.css
