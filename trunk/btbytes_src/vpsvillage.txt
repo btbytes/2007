@@ -63,6 +63,11 @@ Let us take a look at the available resources after a stock Ubuntu OS installati
     Mem:     65536k total,    57876k used,     7660k free,     2096k buffers
     Swap:   131064k total,        0k used,   131064k free,    24032k cached
 
+   $ df -h
+   Filesystem            Size  Used Avail Use% Mounted on
+   /dev/sda1             4.0G  505M  3.5G  13% /
+
+
 We have about 7MB of RAM before the system hits Swap memory. So, have to carefully choose what softwares we run here.
      
 For a low diet system like this, one has to choose the components carefully. `NGINX <http://wiki.codemongers.com/>`_ is a small, fast and well written web server which I have come to like. I have successfully used it as a reverse proxy with Pylons as well as Plone (with Pound for caching).
@@ -79,10 +84,39 @@ I installed NGINX from source using::
 
     ./configure: error: C compiler gcc is not found
 
-Oops! no compiler tools installed yet. Lets remedy that.
+Oops! no compiler tools installed yet. Lets remedy that:: 
+
+    $ apt-get install build-essential
+
+    Configuration summary
+    + threads are not used
+    + PCRE library is not found
+    + OpenSSL library is not used
+    + md5 library is not used
+    + sha1 library is not used
+    + zlib library is not found
+
+Let us install a few of the above:: 
+
+    $ apt-get install libpcre3-dev #installs PCRE lib
+    $ apt-get install zlib1g-dev   #installs zlib
 
 
-    $ apt-get install dev-essential
+Compile and install:: 
+
+    $ make
+    $ make install
+
+This would install the NGINX software at `/usr/local/nginx`. To test the installation::
+
+    $ cd /usr/local/nginx/
+    $ sbin/nginx
+   
+This will start the server on port 80. You can visit the IP of your system and should see ::
+
+    Welcome to nginx!
+
+Voila! you web server is up and running. Firefox's `Serverspy <https://addons.mozilla.org/en-US/firefox/addon/2036>`_ extension tells me that the server is running NGINX0.6.17.
 
 
 .. raw:: html

@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/reset/reset-min.css"> 
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/base/base-min.css"> 
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/fonts/fonts-min.css"> 
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/grids/grids-min.css"> 
+<link rel="stylesheet" type="text/css" href="bonfire.css"> 
+<link rel="stylesheet" type="text/css" href="pygments_style.css"> 
+
+<title>Playing with the $5 VPSVillage VPS account</title>
+
+</head>
+<body>
+  <div id="doc2" class="yui-t5">
+    <div id="hd"> 
+      <h1>BTBYTES.com</h1>
+    </div>
+
+    <div id="bd">
+        <div id="nav"><ul><li><a href="index.html">Home</a></li>
+<li>&gt;</li>
+<li>VPSVillage</li>
+</ul></div>
+        <a name="startcontent" id="startcontent"></a>
+
+        <div class="document" id="playing-with-the-5-vpsvillage-vps-account">
+<h1 class="title">Playing with the $5 VPSVillage VPS account</h1>
+<p>I'm a happy camper with <a class="reference" href="http://www.nearlyfreespeech.net">nearlyfreespeech.net</a> for all my blog hosting needs. I host <a class="reference" href="http://www.btbytes.com">this site</a> (wordpress) as well as <a class="reference" href="http://konkanirecipes.com">my wife's recipe site</a> (Textpattern) &amp; <a class="reference" href="http://osbasket.com">OSBasket.com</a> (TP)and <a class="reference" href="http://madhu.savinudi.org">Madhu's Music blog</a> (WP)on NFS. For low traffic, low maintainance websites, NFS is a great bargain and fantastic to use.</p>
+<p>However, when I want to play around with Django/Pylons using any <cite>non-standard</cite> setups like mod_python etc., NFS or even Dreamhost, which I used to use earlier fall short. I remember hosting a django app on DH using FastCGI, but was not impressed with the fastcgi process getting killed often.</p>
+<p>So, something like VPSVillage is nice to have to hack on side projects and see how they look &quot;Live&quot; without shelling out $$s.</p>
+<p>I requested a VPSvillage $5 account (64M RAM, 4GB HD) on Nov 13th and got my account today (26th). In fact, I had forgotten all about VPSVillage after sending a reminder 3 days after my  first booking.</p>
+<p>Today, I got a mail from Grokthis.net</p>
+<pre class="literal-block">
+Sorry for the wait, I've instructed billing to apply a 1-month credit for service as
+a sign of   appreciation for your patience.
+-- Eric Windisch, CEO
+</pre>
+<p>That was nice of them, but I've already ordered a <a class="reference" href="http://www.linode.com">Linode 300</a> VPS. Let me see how VPSVillage stacks for a $5 offering.</p>
+<p>First thing I did was to log on to the VPS management console, which unlike <a class="reference" href="http://www.linode.com">Linode's</a> nice web driven dashboard, provides a bare bones shell.</p>
+<p>It has options like:</p>
+<pre class="literal-block">
+  The following commands are available within this shell:
+     boot - Boot the Xen guest.
+ console - Gain access to a Xen guest via the serial console.
+    exit - Exit the shell.
+    help - Show general, or command-specific, help information.
+  passwd - Change the password used to access this host.
+    quit - Exit this shell.
+  reboot - Reboot the Xen guest.
+ reimage - Reset your system to a pristine installation.
+  serial - Gain access to the Xen guest via the serial console.
+shutdown - Shutdown the Xen guest.
+  status - Show the status of the Xen guest.
+  uptime - Show the uptime information of your guest system and this host.
+</pre>
+<p>The commands are self-explanatory. I reimaged the Xen VPS with debian-etch with XFS and 32 bit OS, since I had read that 64 bit OSes end up consuming more memory. The installation went fine but for one error related to a (??)thread.so file. This prevented me from installing further packages.</p>
+<p>So, I removed that image too and installed ubuntu-feisty</p>
+<pre class="literal-block">
+RAM Size: 64
+Swap Size: 128
+Disk Size: 4G
+Filesystem: ext3
+Operating System: ubuntu-feisty, 32-bit
+</pre>
+<p>I logged into the VPS as root and ran <cite>apt-get update</cite>. So far so good.</p>
+<p>Let us take a look at the available resources after a stock Ubuntu OS installation on this machine:</p>
+<pre class="literal-block">
+ $ top
+ Tasks:  31 total,   1 running,  30 sleeping,   0 stopped,   0 zombie
+ Cpu(s):  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+ Mem:     65536k total,    57876k used,     7660k free,     2096k buffers
+ Swap:   131064k total,        0k used,   131064k free,    24032k cached
+
+$ df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda1             4.0G  505M  3.5G  13% /
+</pre>
+<p>We have about 7MB of RAM before the system hits Swap memory. So, have to carefully choose what softwares we run here.</p>
+<p>For a low diet system like this, one has to choose the components carefully. <a class="reference" href="http://wiki.codemongers.com/">NGINX</a> is a small, fast and well written web server which I have come to like. I have successfully used it as a reverse proxy with Pylons as well as Plone (with Pound for caching).</p>
+<p>I installed NGINX from source using:</p>
+<pre class="literal-block">
+$ wget http://sysoev.ru/nginx/nginx-0.6.17.tar.gz
+$ tar -zxvf nginx-0.6.17.tar.gz
+$ cd nginx-0.6.17
+$ ./configure
+checking for OS
+  + Linux 2.6.18-3-xen-vserver-amd64 x86_64
+checking for C compiler ... not found
+
+./configure: error: C compiler gcc is not found
+</pre>
+<p>Oops! no compiler tools installed yet. Lets remedy that:</p>
+<pre class="literal-block">
+$ apt-get install build-essential
+
+Configuration summary
++ threads are not used
++ PCRE library is not found
++ OpenSSL library is not used
++ md5 library is not used
++ sha1 library is not used
++ zlib library is not found
+</pre>
+<p>Let us install a few of the above:</p>
+<pre class="literal-block">
+$ apt-get install libpcre3-dev #installs PCRE lib
+$ apt-get install zlib1g-dev   #installs zlib
+</pre>
+<p>Compile and install:</p>
+<pre class="literal-block">
+$ make
+$ make install
+</pre>
+<p>This would install the NGINX software at <cite>/usr/local/nginx</cite>. To test the installation:</p>
+<pre class="literal-block">
+$ cd /usr/local/nginx/
+$ sbin/nginx
+</pre>
+<p>This will start the server on port 80. You can visit the IP of your system and should see</p>
+<pre class="literal-block">
+Welcome to nginx!
+</pre>
+<p>Voila! you web server is up and running. Firefox's <a class="reference" href="https://addons.mozilla.org/en-US/firefox/addon/2036">Serverspy</a> extension tells me that the server is running NGINX0.6.17.</p>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript" src="http://disqus.com/forums/btbytes/embed.js">
+    </script><noscript><a href="http://btbytes.disqus.com/?url=ref">View the forum thread.</a>
+    </noscript>
+<script type="text/javascript">
+//<[CDATA[
+(function() {
+		links = document.getElementsByTagName('a');
+		query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script type="text/javascript" src="http://disqus.com/forums/btbytes/get_num_replies.js' + query + '"></' + 'script>');
+	}());
+//]]>
+</script>
+</div>
+
+
+       </div>
+   
+       <div id="ft">
+            <p><a href="#startcontent">Return to Top</a><br />
+            <small>
+                Page last modified <strong>Mon Nov 26 23:53:17 2007</strong>. Made with <a href="http://www.btbytes.com/bonfire/">Bonfire</a>.
+            </small>
+            
+            </p>
+        </div>
+
+</body>
+</html>
