@@ -1,0 +1,89 @@
+restindex
+    crumb: VPSVillage 
+/restindex
+
+Playing with the $5 VPSVillage VPS account
+==========================================
+
+
+I'm a happy camper with `nearlyfreespeech.net <http://www.nearlyfreespeech.net>`_ for all my blog hosting needs. I host `this site <http://www.btbytes.com>`_ (wordpress) as well as `my wife's recipe site <http://konkanirecipes.com>`_ (Textpattern) & `OSBasket.com <http://osbasket.com>`_ (TP)and `Madhu's Music blog <http://madhu.savinudi.org>`_ (WP)on NFS. For low traffic, low maintainance websites, NFS is a great bargain and fantastic to use. 
+
+However, when I want to play around with Django/Pylons using any `non-standard` setups like mod_python etc., NFS or even Dreamhost, which I used to use earlier fall short. I remember hosting a django app on DH using FastCGI, but was not impressed with the fastcgi process getting killed often. 
+
+So, something like VPSVillage is nice to have to hack on side projects and see how they look "Live" without shelling out $$s. 
+
+I requested a VPSvillage $5 account (64M RAM, 4GB HD) on Nov 13th and got my account today (26th). In fact, I had forgotten all about VPSVillage after sending a reminder 3 days after my  first booking. 
+
+Today, I got a mail from Grokthis.net :: 
+
+   Sorry for the wait, I've instructed billing to apply a 1-month credit for service as 
+   a sign of   appreciation for your patience.
+   -- Eric Windisch, CEO
+
+That was nice of them, but I've already ordered a `Linode 300 <http://www.linode.com>`_ VPS. Let me see how VPSVillage stacks for a $5 offering.
+
+ 
+First thing I did was to log on to the VPS management console, which unlike `Linode's <http://www.linode.com>`_ nice web driven dashboard, provides a bare bones shell.
+
+It has options like:: 
+
+    The following commands are available within this shell:
+       boot - Boot the Xen guest.
+   console - Gain access to a Xen guest via the serial console.
+      exit - Exit the shell.
+      help - Show general, or command-specific, help information.
+    passwd - Change the password used to access this host.
+      quit - Exit this shell.
+    reboot - Reboot the Xen guest.
+   reimage - Reset your system to a pristine installation.
+    serial - Gain access to the Xen guest via the serial console.
+  shutdown - Shutdown the Xen guest.
+    status - Show the status of the Xen guest.
+    uptime - Show the uptime information of your guest system and this host.
+
+
+The commands are self-explanatory. I reimaged the Xen VPS with debian-etch with XFS and 32 bit OS, since I had read that 64 bit OSes end up consuming more memory. The installation went fine but for one error related to a (??)thread.so file. This prevented me from installing further packages. 
+
+So, I removed that image too and installed ubuntu-feisty ::
+
+    RAM Size: 64
+    Swap Size: 128
+    Disk Size: 4G
+    Filesystem: ext3
+    Operating System: ubuntu-feisty, 32-bit
+
+I logged into the VPS as root and ran `apt-get update`. So far so good.
+
+
+Let us take a look at the available resources after a stock Ubuntu OS installation on this machine::
+
+    $ top 
+    Tasks:  31 total,   1 running,  30 sleeping,   0 stopped,   0 zombie
+    Cpu(s):  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+    Mem:     65536k total,    57876k used,     7660k free,     2096k buffers
+    Swap:   131064k total,        0k used,   131064k free,    24032k cached
+
+We have about 7MB of RAM before the system hits Swap memory. So, have to carefully choose what softwares we run here.
+     
+For a low diet system like this, one has to choose the components carefully. `NGINX <http://wiki.codemongers.com/>`_ is a small, fast and well written web server which I have come to like. I have successfully used it as a reverse proxy with Pylons as well as Plone (with Pound for caching).
+
+I installed NGINX from source using:: 
+
+    $ wget http://sysoev.ru/nginx/nginx-0.6.17.tar.gz
+    $ tar -zxvf nginx-0.6.17.tar.gz
+    $ cd nginx-0.6.17
+    $ ./configure
+    checking for OS
+      + Linux 2.6.18-3-xen-vserver-amd64 x86_64
+    checking for C compiler ... not found
+
+    ./configure: error: C compiler gcc is not found
+
+Oops! no compiler tools installed yet. Lets remedy that.
+
+
+    $ apt-get install dev-essential
+
+
+.. raw:: html
+   :file: disqus.txt
