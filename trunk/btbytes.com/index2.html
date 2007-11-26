@@ -5,10 +5,10 @@
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/base/base-min.css"> 
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/fonts/fonts-min.css"> 
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/grids/grids-min.css"> 
-<link rel="stylesheet" type="text/css" href="<% path_to_root %>bonfire.css"> 
-<link rel="stylesheet" type="text/css" href="<% path_to_root %>pygments_style.css"> 
+<link rel="stylesheet" type="text/css" href="bonfire.css"> 
+<link rel="stylesheet" type="text/css" href="pygments_style.css"> 
 
-<title><% title %></title>
+<title>bonfire</title>
 
 </head>
 <body>
@@ -18,17 +18,27 @@
     </div>
 
     <div id="bd">
-        <div id="nav"><ul><# print_crumbs(breadcrumbs) #></ul></div>
+        <div id="nav"><ul><li>Home</li>
+</ul></div>
         <a name="startcontent" id="startcontent"></a>
 
-        <% body %>
+        
+<div id="menu">
+ <h3>Pages</h3>
+<ul><li><a href="vpsvillage.html">Playing with the $5 VPSVillage VPS account</a></li></ul>
+<h3>Sub Sections</h3>
+<ul><li><a href="bonfire/index.html">Bonfire</a></li></ul>
+
+<p/>
+</div><!-- #menu -->
+
 
        </div>
    
        <div id="ft">
             <p><a href="#startcontent">Return to Top</a><br />
             <small>
-                Page last modified <strong><% modtime %></strong>. Made with <a href="http://www.btbytes.com/bonfire/">Bonfire</a>.
+                Page last modified <strong>Mon Nov 26 23:56:05 2007</strong>. Made with <a href="http://www.btbytes.com/bonfire/">Bonfire</a>.
             </small>
             
             </p>
