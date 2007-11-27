@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="bonfire.css"> 
 <link rel="stylesheet" type="text/css" href="pygments_style.css"> 
 
-<title>Playing with the $5 VPSVillage VPS account</title>
+<title></title>
 
 </head>
 <body>
@@ -24,8 +24,9 @@
 </ul></div>
         <a name="startcontent" id="startcontent"></a>
 
-        <div class="document" id="playing-with-the-5-vpsvillage-vps-account">
-<h1 class="title">Playing with the $5 VPSVillage VPS account</h1>
+        <div class="document">
+<div class="section">
+<h1><a id="playing-with-the-5-vpsvillage-vps-account" name="playing-with-the-5-vpsvillage-vps-account">Playing with the $5 VPSVillage VPS account</a></h1>
 <p>I'm a happy camper with <a class="reference" href="http://www.nearlyfreespeech.net">nearlyfreespeech.net</a> for all my blog hosting needs. I host <a class="reference" href="http://www.btbytes.com">this site</a> (wordpress) as well as <a class="reference" href="http://konkanirecipes.com">my wife's recipe site</a> (Textpattern) &amp; <a class="reference" href="http://osbasket.com">OSBasket.com</a> (TP)and <a class="reference" href="http://madhu.savinudi.org">Madhu's Music blog</a> (WP)on NFS. For low traffic, low maintainance websites, NFS is a great bargain and fantastic to use.</p>
 <p>However, when I want to play around with Django/Pylons using any <cite>non-standard</cite> setups like mod_python etc., NFS or even Dreamhost, which I used to use earlier fall short. I remember hosting a django app on DH using FastCGI, but was not impressed with the fastcgi process getting killed often.</p>
 <p>So, something like VPSVillage is nice to have to hack on side projects and see how they look &quot;Live&quot; without shelling out $$s.</p>
@@ -37,11 +38,13 @@ a sign of   appreciation for your patience.
 -- Eric Windisch, CEO
 </pre>
 <p>That was nice of them, but I've already ordered a <a class="reference" href="http://www.linode.com">Linode 300</a> VPS. Let me see how VPSVillage stacks for a $5 offering.</p>
+<div class="section">
+<h2><a id="rattling-the-gates" name="rattling-the-gates">Rattling the gates</a></h2>
 <p>First thing I did was to log on to the VPS management console, which unlike <a class="reference" href="http://www.linode.com">Linode's</a> nice web driven dashboard, provides a bare bones shell.</p>
 <p>It has options like:</p>
 <pre class="literal-block">
   The following commands are available within this shell:
-     boot - Boot the Xen guest.
+    boot - Boot the Xen guest.
  console - Gain access to a Xen guest via the serial console.
     exit - Exit the shell.
     help - Show general, or command-specific, help information.
@@ -77,6 +80,12 @@ Filesystem            Size  Used Avail Use% Mounted on
 /dev/sda1             4.0G  505M  3.5G  13% /
 </pre>
 <p>We have about 7MB of RAM before the system hits Swap memory. So, have to carefully choose what softwares we run here.</p>
+</div>
+</div>
+<div class="section">
+<h1><a id="choosing-the-lamp-components" name="choosing-the-lamp-components">Choosing the LAMP(?) Components</a></h1>
+<div class="section">
+<h2><a id="the-webserver" name="the-webserver">The webserver</a></h2>
 <p>For a low diet system like this, one has to choose the components carefully. <a class="reference" href="http://wiki.codemongers.com/">NGINX</a> is a small, fast and well written web server which I have come to like. I have successfully used it as a reverse proxy with Pylons as well as Plone (with Pound for caching).</p>
 <p>I installed NGINX from source using:</p>
 <pre class="literal-block">
@@ -122,6 +131,17 @@ $ sbin/nginx
 Welcome to nginx!
 </pre>
 <p>Voila! you web server is up and running. Firefox's <a class="reference" href="https://addons.mozilla.org/en-US/firefox/addon/2036">Serverspy</a> extension tells me that the server is running NGINX0.6.17.</p>
+</div>
+<div class="section">
+<h2><a id="caching-server-memcached" name="caching-server-memcached">Caching Server - Memcached</a></h2>
+<p>Download memcached from <a class="reference" href="http://www.danga.com/memcached/download.bml">http://www.danga.com/memcached/download.bml</a> .</p>
+<p>Install <cite>libevent</cite> libraries first.</p>
+<pre class="literal-block">
+$ apt-get install libevent-dev
+$ ./configure
+$ make
+$ make install
+</pre>
     <div id="disqus_thread"></div>
     <script type="text/javascript" src="http://disqus.com/forums/btbytes/embed.js">
     </script><noscript><a href="http://btbytes.disqus.com/?url=ref">View the forum thread.</a>
@@ -141,6 +161,8 @@ Welcome to nginx!
 //]]>
 </script>
 </div>
+</div>
+</div>
 
 
        </div>
@@ -148,7 +170,7 @@ Welcome to nginx!
        <div id="ft">
             <p><a href="#startcontent">Return to Top</a><br />
             <small>
-                Page last modified <strong>Mon Nov 26 23:53:17 2007</strong>. Made with <a href="http://www.btbytes.com/bonfire/">Bonfire</a>.
+                Page last modified <strong>Tue Nov 27 07:33:11 2007</strong>. Made with <a href="http://www.btbytes.com/bonfire/">Bonfire</a>.
             </small>
             
             </p>
