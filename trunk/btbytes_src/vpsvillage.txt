@@ -22,13 +22,15 @@ Today, I got a mail from Grokthis.net ::
 
 That was nice of them, but I've already ordered a `Linode 300 <http://www.linode.com>`_ VPS. Let me see how VPSVillage stacks for a $5 offering.
 
+Rattling the gates
+~~~~~~~~~~~~~~~~~~
  
 First thing I did was to log on to the VPS management console, which unlike `Linode's <http://www.linode.com>`_ nice web driven dashboard, provides a bare bones shell.
 
 It has options like:: 
 
     The following commands are available within this shell:
-       boot - Boot the Xen guest.
+      boot - Boot the Xen guest.
    console - Gain access to a Xen guest via the serial console.
       exit - Exit the shell.
       help - Show general, or command-specific, help information.
@@ -69,7 +71,14 @@ Let us take a look at the available resources after a stock Ubuntu OS installati
 
 
 We have about 7MB of RAM before the system hits Swap memory. So, have to carefully choose what softwares we run here.
+
+
+Choosing the LAMP(?) Components
+===============================
      
+The webserver
+~~~~~~~~~~~~~
+
 For a low diet system like this, one has to choose the components carefully. `NGINX <http://wiki.codemongers.com/>`_ is a small, fast and well written web server which I have come to like. I have successfully used it as a reverse proxy with Pylons as well as Plone (with Pound for caching).
 
 I installed NGINX from source using:: 
@@ -117,6 +126,21 @@ This will start the server on port 80. You can visit the IP of your system and s
     Welcome to nginx!
 
 Voila! you web server is up and running. Firefox's `Serverspy <https://addons.mozilla.org/en-US/firefox/addon/2036>`_ extension tells me that the server is running NGINX0.6.17.
+
+
+Caching Server - Memcached
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Download memcached from `http://www.danga.com/memcached/download.bml <http://www.danga.com/memcached/download.bml>`_ .
+
+Install `libevent` libraries first. :: 
+
+    $ apt-get install libevent-dev
+    $ ./configure
+    $ make
+    $ make install 
+    
+
 
 
 .. raw:: html
