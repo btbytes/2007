@@ -1,5 +1,6 @@
 restindex
     crumb: VPSVillage 
+    template: wp_template.txt
 /restindex
 
 Playing with the $5 VPSVillage VPS account
