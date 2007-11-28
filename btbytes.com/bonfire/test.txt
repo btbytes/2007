@@ -1,0 +1,16 @@
+restindex
+    crumb: Bonfire Test doc
+    format: rest
+    page-title: Bonfire Test doc
+/restindex
+
+=====================
+Bonfire Test Document
+=====================
+
+.. sourcecode:: python
+
+  def foo():
+    print "Hello world"
+
+

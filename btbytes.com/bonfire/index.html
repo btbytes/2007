@@ -54,6 +54,43 @@ So, Bonfire = reST + rest2web  + YUI + Pygments + Styling (with detailed instruc
 <li>Install pygments, <tt class="docutils literal"><span class="pre">sudo</span> <span class="pre">easy_install</span> <span class="pre">pygments</span></tt></li>
 </ol>
 </blockquote>
+<p>reStructuredText uses <cite>raw directive</cite> to include raw text from other formats like HTML, Latex or even source code. The users can also define directives which serve specific purposes. In this case, we will use the <cite>sourcecode</cite> directive. The directive (<a class="reference" href="pygrst.py">pygrst.py</a> ) is taken from the pygments projects. Put this file in your system path.</p>
+<p>Next, you have to tell <cite>r2w</cite> script which builds the rest2web sites about this directive so that it can use it while parsing the files. So, add a line</p>
+<div class="highlight"><pre><span class="k">from</span> <span class="nn">pygrst</span> <span class="k">import</span> <span class="o">*</span>
+</pre></div>
+<p>to your r2w file, whereever it is installed. You can use <cite>locate r2w</cite> to locate the script.</p>
+<p>Now, we are ready to test the installation.</p>
+<p>Create a file <a class="reference" href="test.txt">test.txt</a> with the following code:</p>
+<pre class="literal-block">
+.. sourcecode:: python
+  def foo():
+    '''Say hello'''
+    print 'Hello world'
+</pre>
+<p>In the <a class="reference" href="template.txt">template.txt</a> file, include the <a class="reference" href="pygments_style.css">pygments_style.css</a> file taken from the pygments source distribution.</p>
+<p>Run <cite>r2w config.ini</cite>. Voila! You should see</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">foo</span><span class="p">():</span>
+  <span class="sd">&#39;&#39;&#39;Say hello&#39;&#39;&#39;</span>
+    <span class="k">print</span> <span class="s">&#39;Hello world&#39;</span>
+</pre></div>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript" src="http://disqus.com/forums/btbytes/embed.js">
+    </script><noscript><a href="http://btbytes.disqus.com/?url=ref">View the forum thread.</a>
+    </noscript>
+<script type="text/javascript">
+//<[CDATA[
+(function() {
+		links = document.getElementsByTagName('a');
+		query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script type="text/javascript" src="http://disqus.com/forums/btbytes/get_num_replies.js' + query + '"></' + 'script>');
+	}());
+//]]>
+</script>
 </div>
 </div>
 
@@ -63,7 +100,7 @@ So, Bonfire = reST + rest2web  + YUI + Pygments + Styling (with detailed instruc
        <div id="ft">
             <p><a href="#startcontent">Return to Top</a><br />
             <small>
-                Page last modified <strong>Wed Nov 28 11:23:19 2007</strong>. Made with <a href="http://www.btbytes.com/bonfire/">Bonfire</a>.
+                Page last modified <strong>Wed Nov 28 12:00:54 2007</strong>. Made with <a href="http://www.btbytes.com/bonfire/">Bonfire</a>.
             </small>
             
             </p>
