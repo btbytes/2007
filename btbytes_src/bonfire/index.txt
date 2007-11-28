@@ -2,6 +2,7 @@ restindex
     crumb: Bonfire
     format: rest
     page-title: Bonfire
+    file: test.txt
 /restindex
 
 =======================================
@@ -48,4 +49,34 @@ If you want code to be rendered with syntax highlight,
 
  1. Install pygments, ``sudo easy_install pygments``
 
+reStructuredText uses `raw directive` to include raw text from other formats like HTML, Latex or even source code. The users can also define directives which serve specific purposes. In this case, we will use the `sourcecode` directive. The directive (`pygrst.py <pygrst.py>`_ ) is taken from the pygments projects. Put this file in your system path. 
 
+Next, you have to tell `r2w` script which builds the rest2web sites about this directive so that it can use it while parsing the files. So, add a line
+
+.. sourcecode:: python
+
+   from pygrst import *
+
+to your r2w file, whereever it is installed. You can use `locate r2w` to locate the script.
+
+Now, we are ready to test the installation. 
+
+Create a file `test.txt <test.txt>`_ with the following code::
+
+  .. sourcecode:: python
+    def foo():
+      '''Say hello'''
+      print 'Hello world'
+
+In the `template.txt <template.txt>`_ file, include the `pygments_style.css <pygments_style.css>`_ file taken from the pygments source distribution. 
+
+Run `r2w config.ini`. Voila! You should see
+
+.. sourcecode:: python
+
+  def foo():
+    '''Say hello'''
+      print 'Hello world'
+
+.. raw:: html
+   :file: ../disqus.txt
