@@ -1,0 +1,13 @@
+restindex
+    crumb: Home
+    format: html
+    page-title: bonfire
+    file: begonia-sm.jpg
+/restindex
+
+<div id="menu">
+ <#
+        print_details(default_section)
+ #>
+<p/>
+</div><!-- #menu -->
