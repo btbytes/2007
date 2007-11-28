@@ -1,6 +1,5 @@
 restindex
     crumb: VPSVillage 
-    template: wp_template.txt
 /restindex
 
 Playing with the $5 VPSVillage VPS account
@@ -82,7 +81,7 @@ The webserver
 
 For a low diet system like this, one has to choose the components carefully. `NGINX <http://wiki.codemongers.com/>`_ is a small, fast and well written web server which I have come to like. I have successfully used it as a reverse proxy with Pylons as well as Plone (with Pound for caching).
 
-I installed NGINX from source using:: 
+I installed NGINX from source using::
 
     $ wget http://sysoev.ru/nginx/nginx-0.6.17.tar.gz
     $ tar -zxvf nginx-0.6.17.tar.gz

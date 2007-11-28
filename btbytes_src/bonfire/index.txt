@@ -44,7 +44,7 @@ How to install and use Bonfire
  1. Install docutils. On ubuntu ``sudo apt-get install python-docutils``
  2. Install rest2web, ``sudo apt-get install rest2web``
  
-If you want code to be rendered with sytax highlight, 
+If you want code to be rendered with syntax highlight, 
 
  1. Install pygments, ``sudo easy_install pygments``
 
