@@ -3,10 +3,6 @@ restindex
     format: html
     target: index2.html
     page-title: bonfire
-    file: bonfire.css
-    file: pygments_style.css
-    file: pygrst.py
-    file: r2w
 /restindex
 
 <div id="menu">
