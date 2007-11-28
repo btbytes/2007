@@ -2,7 +2,8 @@ restindex
     crumb: Home
     format: html
     target: index2.html
-    page-title: bonfire
+    page-title: Home
+    file: template.txt
 /restindex
 
 <div id="menu">
