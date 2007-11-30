@@ -1,10 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/reset/reset-min.css"> 
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/base/base-min.css"> 
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/fonts/fonts-min.css"> 
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/grids/grids-min.css"> 
+<link rel="stylesheet" type="text/css" href="<%path_to_root%>css/reset-fonts-grids.css"> 
 <link rel="stylesheet" type="text/css" href="<% path_to_root %>bonfire.css"> 
 <link rel="stylesheet" type="text/css" href="<% path_to_root %>pygments_style.css"> 
 
