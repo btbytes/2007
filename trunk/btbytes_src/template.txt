@@ -2,8 +2,8 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="<%path_to_root%>css/reset-fonts-grids.css"> 
-<link rel="stylesheet" type="text/css" href="<% path_to_root %>bonfire.css"> 
-<link rel="stylesheet" type="text/css" href="<% path_to_root %>pygments_style.css"> 
+<link rel="stylesheet" type="text/css" href="<% path_to_root %>css/bonfire.css"> 
+<link rel="stylesheet" type="text/css" href="<% path_to_root %>css/pygments_style.css"> 
 
 <title><% title %></title>
 
