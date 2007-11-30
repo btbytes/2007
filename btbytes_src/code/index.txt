@@ -1,0 +1,38 @@
+restindex
+  page-title: Code & Hacks
+  crumb: Code
+  format: html
+/restindex
+
+<div id="page-content">
+												
+<p>Some of the code snippets I have written that are currently online elsewhere.</p>
+
+<h4 id="toc3"><span>Apps</span></h4>
+<ul>
+<li><a href="http://code.google.com/p/sookti/">Sookti</a> - The Quote Server. Written using Python/Pylons, Elixir, Mako templating.</li>
+<li><a href="http://code.google.com/p/grokpaste/">GrokPaste</a> - Pastebin app written using <a href="http://grok.zope.org">Grok</a>, a Zope3 technology.
+</ul>
+
+<h4 id="toc4"><span>Python Recipes</span></h4>
+<ul>
+<li><a href="http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/410076">Random Password Generator</a></li>
+<li><a href="http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/440533">ARFF to SQL importer using Pyparsing and SQLAlchemy</a></li>
+<li><a href="http://pylonshq.com/project/pylonshq/wiki/DeliciousBookmarks">del.icio.us feed for you blog (myghty)</a></li>
+
+</ul>
+<h4 id="toc5"><span>Pylons Recipes</span></h4>
+<ul>
+<li><a href="http://docs.pythonweb.org/display/pylonscookbook/Running+Pylons+with+NGINX">Running Pylons with NGINX</a></li>
+</ul>
+<h4 id="toc6"><span><a href="http://www.djangosnippets.org/users/btbytes/">Django Snippets</a>(<a href="http://www.djangosnippets.org/feeds/author/btbytes/">feed</a>)</span></h4>
+<ul>
+<li><a href="http://www.djangosnippets.org/snippets/141/">Django Registration with GMail account</a></li>
+<li><a href="http://www.djangosnippets.org/snippets/359/">Ordering Models in Django Site administration screen</a></li>
+
+</ul>
+<h4 id="toc7"><span>External links</span></h4>
+<ul>
+<li><a href="http://www.gigamonkeys.com/book/">Lisp tutorial</a></li>
+</ul>
+</div>
