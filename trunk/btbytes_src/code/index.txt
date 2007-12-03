@@ -5,7 +5,13 @@ restindex
 /restindex
 
 <div id="page-content">
-												
+
+
+<h4 id="euler"><span>Project Euler</span></h4>
+<p>
+I have solved 8 problems out of 170 or so mathematical problems available on <a href="http://www.projecteuler.net">Project Euler</a>. 
+Try solving these problems to sharpen your math and programming skills. Another excercise is to solve the same problem using different programming languages. I have observed that Functional programming techniques are very valuble while solving these problems.
+</p>												
 <p>Some of the code snippets I have written that are currently online elsewhere.</p>
 
 <h4 id="toc3"><span>Apps</span></h4>
