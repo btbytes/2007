@@ -1,0 +1,29 @@
+<html>
+				<head>
+				<style type="text/css">@import "/css/archive.css";</style>
+				<title>The Hula Project</title>
+				</head>				
+				<body><div id="archive-main">
+				<div id="archive-header">
+				<p>			
+				<a href="http://btbytes.com">Home</a>
+				</p>
+				</div> 
+				<h1>The Hula Project</h1>
+				
+					<p><a href="http://www.hula-project.org">Hula</a> is an open source web based mail/calendaring server. The Hula ( <a href="http://dictionary.reference.com/search?q=hula">Polynesian dance</a> ) project is carved out of Novell&#8217;s <a href="http://www.novell.com/products/netmail/">Netmail</a> product.  Novell seems to be doing the Open Source &#8216;thing&#8217; right.  They have <a href="http://www.novell.com/news/press/archive/2005/02/pr05014.html">released</a> 200,000 + lines of code into Hula project under <a href="http://opensource.org/licenses/lgpl-license.php">LGPL</a>  and <a href="http://opensource.org/licenses/mozilla1.1.php">MPL</a></p>
+
+	<p>This is aninteresting and exciting development. Even though there are many open source web mail clients (squirrelmail), none of them can hold a candle to <a href="http://gmail.google.com">gmail</a>. Gmail blurs the distinction between web applications and desktop applications. And, it has upped the bar on how responsive, the web applications could be.</p>
+
+	<p>Can we have the Gmail kind of functionality/responsiveness for our work-mail? How about accessing the group calendar while we are at it?  Being able access others&#8217; calendars through RSS feeds on the PDA will be really useful.<br />
+Hula should provide the answer. <a href="http://nat.org/2005/february/#15-February-2005">Nat Friedman</a> has very interesting takes on the same. <br />
+<a href="http://linux.slashdot.org/linux/05/02/15/2228204.shtml?tid=223&#38;tid=106">Slashdot thread</a></p>
+
+	<p>PS: <a href="http://www.icalshare.com/">icalshare.com/</a> allows you to share your calendars (ics) on the web. Pretty neat! But, you need to copy the ICS file over to the server, with Hula perhaps sharing calendars should be as easy as publishing the RSS.</p>
+
+
+ <hr/><h3>Comments:</h3><p><a href="#" id="26"> Anand </a> on 2005-02-28 12:12:17 said :<br/> Pradeep<br />
+<br />
+       You need to start on a new topic!<br />
+<br />
+-Anand</p></body></html>

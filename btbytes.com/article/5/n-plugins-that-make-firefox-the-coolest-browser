@@ -1,0 +1,44 @@
+<html>
+				<head>
+				<style type="text/css">@import "/css/archive.css";</style>
+				<title>n plugins that make Firefox the coolest browser</title>
+				</head>				
+				<body><div id="archive-main">
+				<div id="archive-header">
+				<p>			
+				<a href="http://btbytes.com">Home</a>
+				</p>
+				</div> 
+				<h1>n plugins that make Firefox the coolest browser</h1>
+				
+					<p>An on going discovery of Firefox plugins that make browsing the World Wide Web useful, easy and pleasurable. </p>
+
+	<p><a href="http://delicious.mozdev.org/"><strong>del.icio.us</strong></a><br />
+A Plug-in that allows you to bookmak your pages and store them on line with the <a href="http://del.icio.us">http://del.icio.us</a> service. <br />
+In my opinion, del.icio.us is the next best thing that happened to the internet since google. Visually explore my del.icio.us world at <a href="http://kevan.org/extispicious.cgi?name=btbytes">http://kevan.org/extispicious.cgi?name=btbytes</a></p>
+
+	<p><a href="http://adblock.mozdev.org/"><strong>AdBlock</strong></a><br />
+Firefox is known for its in built ability to block popups. But what about ads that appear on the web pages themselves? I visit some sites almost on a daily(hourly? slashdot :) basis.  It would be nice read articles without all the flash movies and animated gifs distracting me.  <br />
+Adblock allows you to block images/ flash images from web pages. To block a flash movie just click on the adblock tab that is augomagically attached to it and you can banish the ad forever!.  Note: it would be nice to adblock truly <strong>intrusive</strong> ads. Help your favourite sites sustain their ad revenue.</p>
+
+	<p><a href="http://quicknote.mozdev.org/"><strong>QuickNote</strong></a><br />
+Allows you to keep notes. A virtual sticky pad that keeps the notes even when you close your browser window and restart. Very handy to make quick notes. </p>
+
+	<p><a href="http://extensionroom.mozdev.org/more-info/fireftp"><strong>FireFTP</strong></a><br />
+A full fledged FTP client that runs on top of Firefox. Enough said. </p>
+
+	<p><a href="http://extensionroom.mozdev.org/more-info/webmailcompose"><strong>WebmailCompose</strong></a><br />
+want to mail a piece of text you found on the net to your collegue/friend? <br />
+Its as easy as selecting the text and selecing webmailcompose from the context menu (right-click ->menu). </p>
+
+	<p><a href="http://spellbound.sourceforge.net"><strong>Spell Bound</strong></a><br />
+Spell Bound is a spell checker for Firefox and Mozilla browsers.</p>
+
+	<p><a href="http://www.iosart.com/foxytunes/firefox/"><strong>FoxyTunes</strong></a><br />
+Emacs users are proud of the fact that, they can do almost anything from with in the emacs environment. Firefox users are getting there too :). With FoxyTunes you can control your music player(winamp, itunes, windows media player, amarok&#8230;almost any player you can think of) without leaving your browser. </p>
+
+	<p>There is a new plugin built on top of Firefox/Mozilla almost everyday. The XUL/XPCOM architecture makes it a snap to write plugins. <br />
+Check out more plugins at <a href="https://addons.update.mozilla.org/?application=firefox">updates.mozilla.org</a></p>
+
+
+ <hr/><h3>Comments:</h3><p><a href="http://roshweb.blogspot.com" id="2"> Roshan Revankar </a> on 2004-12-22 12:39:13 said :<br/> You should use the google toolbar(http://googlebar.mozdev.org/) and the bugmenot (http://extensions.roachfiend.com/index.php#bugmenot) extensions also.</p></body></html>

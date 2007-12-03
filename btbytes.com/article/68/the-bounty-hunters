@@ -1,0 +1,30 @@
+<html>
+				<head>
+				<style type="text/css">@import "/css/archive.css";</style>
+				<title>The bounty hunters</title>
+				</head>				
+				<body><div id="archive-main">
+				<div id="archive-header">
+				<p>			
+				<a href="http://btbytes.com">Home</a>
+				</p>
+				</div> 
+				<h1>The bounty hunters</h1>
+				
+					<p>Last year <a href="http://www.ca.com">Computer Associates</a> open sourced their enterprise database <a href="http://opensource.ca.com/projects/ingres">ingres</a> and they had announced a $1 million contest inviting people to write tools to port data from other databases. All the three <a href="http://www3.ca.com/Press/PressRelease.aspx?CID=69484">prize winning teams</a> are <a href="http://us.rediff.com/money/2005/may/18ca.htm">Indian</a>. </p>
+
+	<p>Suprisingly the <a href="http://www3.ca.com/Files/SupportingPieces/ingres_challenge_tc2.pdf">Contest rules</a>  say: <br />
+the contest is intended for presentation in the united states, canada (except quebec province), Mexico, India, China, the United Kingdom, Australia and New zealand. Do not proceed within this site if you are not a resident of one of these countries.<br />
+I wonder why? <br />
+The prize winning projects   are here:<br />
+<a href="http://www.sourceforge.net/projects/shift2ingres">shift2ingres</a><br />
+<a href="http://www.sourceforge.net/projects/ezymigrate">ezymigrate</a> <br />
+<a href="http://www.sourceforge.net/projects/dbcvt">dbcvt</a> </p>
+
+	<p><a href="http://gnome.org">Gnome</a> , <a href="http://www.ubuntulinux.org/community/bounties">Ubuntu</a> and <a href="http://www.getfirefox.com">Firefox</a> are some of the other opensource projects that regularly have bounty hunting programs. </p>
+
+	<p>Choose your weapons! </p>
+
+
+
+ <hr/><i>no comments</i></body></html>

@@ -1,0 +1,50 @@
+<html>
+				<head>
+				<style type="text/css">@import "/css/archive.css";</style>
+				<title>Bangalore Pythonistas</title>
+				</head>				
+				<body><div id="archive-main">
+				<div id="archive-header">
+				<p>			
+				<a href="http://btbytes.com">Home</a>
+				</p>
+				</div> 
+				<h1>Bangalore Pythonistas</h1>
+				
+					<p>Pythonistas of Bangalore came together yesterday to herald a new chapter in the history of Pythonic computing. Hooray!</p>
+
+	<p>The meetup was organised by Anand Pillai, well known for his column on Python in Linux For You. <br />
+Me and <a href="http://swaroopch.info">Swaroop</a> landed in Barton Centre on MG Road. The only other person we knew was <a href="http://www.livejournal.com/users/premshree/">Premshree Pillai</a> ; a Yahoo!, Python chef(look up his recipes in ASPN Python cookbook) and off-late a Ruby convert.<br />
+We went up to Ebony in the 13th floor. In the lift, there were 3 other guys, Owen,Suresh from Thoughtworks and Sundar from Computer Associates. We easily deduced that they were fellow pythonistas too. After all, who else, but fellow geeks be out in such  numbers on a saturday night. </p>
+
+	<p>Anand had already landed a very nice table in the terrace, overlooking the City. I had never seen Banglore from that vantage point before. The evening was chilly but soon python embraced us in a warm hug :)</p>
+
+	<p>Ramdas, editor of Developer IQ; Gurupreet from Textual Analytics and Anish from Infosys SET labs were already there. </p>
+
+	<p>It was a pleasant surprise to meet Ramdas, after having sent my article on <a href="http://subversion.tigris.org">Subversion</a> to him only the day before. </p>
+
+	<p><strong>Python! thy name is??</strong><br />
+After a formal round of introductions, we got down to the business of setting the agenda for the day. First order of the day was to give a name to the group. The alternatives that came up were.</p>
+	<ul>
+	<li>Bang!Python </li>
+		<li>BaPy (for Bangalore Pythonistas) </li>
+		<li>BaPy.py </li>
+		<li>and some other names which were really cool, but perhaps you couldnt say it with a straight face ;)<br />
+Ramdas did an anonymous voting and the winner was BaPy. 
+
+	<p>Anand suggested that we have Technical discussions and presentations on Python and related technologies from the next meeting onwards. This was well received and Owen graciously offered to host it for the time being in Thoughtworks premises. </p>
+
+	<p>Sundar proposed the idea of,  the group to starting a python project. Swaroop backed him with his idea for a CPAN like repository for python modules. We will be seeing some action on this soon! </p>
+
+	<p>Ramdas shared his views on having a good RAD tool in python, lowering the barrier for newbie programmers in adopting Python. </p>
+
+	<p>And ah!! no meetup of geeks is complete without a round of battle between Vim and Emacs guys. Owen, Anil and Anish led the emacs front with me, swaroop and Prem defending Vim ;)</p>
+
+	<p>PyPy, Stackless,SWIG, <em>ahem</em> static typing also were also discussed. </p>
+
+	<p>What really excites me about this group is the depth and diversity.  When you have people from Grid computing, Data Mining, Agile Programming, Web application servers background, writers and a magazine editor, the group is really very interesting !!</p>
+
+	<p>We will have a mailing list soon. Watch this space. Swaroop has the <a href="http://www.swaroopch.info/archives/2005/01/22/first-bangalore-python-meetup/">photos</a></p>
+
+
+ <hr/><h3>Comments:</h3><p><a href="http://satchit-haridas.net" id="15"> Satchit </a> on 2005-01-24 00:20:53 said :<br/> Good to know abt the Bangalore Python group. This will help Python users to share their experiences and knowledge of the language. Looking forward to attending the next meet. btw, emacs rules! :-)</p></body></html>
