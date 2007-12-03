@@ -1,0 +1,23 @@
+<html>
+				<head>
+				<style type="text/css">@import "/css/archive.css";</style>
+				<title>Using the Google Goopy.Functional Module</title>
+				</head>				
+				<body><div id="archive-main">
+				<div id="archive-header">
+				<p>			
+				<a href="http://btbytes.com">Home</a>
+				</p>
+				</div> 
+				<h1>Using the Google Goopy.Functional Module</h1>
+				
+					<p>After the <a href="http://btbytes.com/article/40/fp-is-dead-long-live-fp">last post</a> , I started exploring <a href="http://goog-goopy.sourceforge.net">Goopy</a> <a href="http://goog-goopy.sourceforge.net/goopy.functional.html">module</a> further. I wrote a a demo script <a href="http://btbytes.com/files/python/usegoopy.py">usegoopy.py</a> to understand the functionality of each function in the module. Most of them are trivial. </p>
+
+	<p>Update: I had a typo and a wrong function call in the code that did not work for me. Thanks to <a href="http://blogs.applibase.net/sidharth">Sidharth</a>  for pointing that out. </p>
+
+
+ <hr/><h3>Comments:</h3><p><a href="http://blogs.applibase.net/sidharth" id="29"> Sidharth Kuruvila </a> on 2005-03-21 02:43:08 said :<br/> Flatten1:<br />
+You seem to have used flatten instead  of flatten1.<br />
+<br />
+Sort:<br />
+operator.le returns True or False(thich map to 1 and 0 resp.) while sort expects a function that will return one of -1, 0 or 1.</p></body></html>

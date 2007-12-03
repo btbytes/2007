@@ -1,0 +1,41 @@
+<html>
+				<head>
+				<style type="text/css">@import "/css/archive.css";</style>
+				<title>Internet search  comes a full circle</title>
+				</head>				
+				<body><div id="archive-main">
+				<div id="archive-header">
+				<p>			
+				<a href="http://btbytes.com">Home</a>
+				</p>
+				</div> 
+				<h1>Internet search  comes a full circle</h1>
+				
+					<p>Back in 1996, when I first used the internet, Yahoo! was <em>the</em> web. To get anywhere, I used to start at Yahoo&#8217;s front page. Yahoo! started out as a website containing links to other websites. Yahoo! classifed sites under the most important attributes of that page. This was, obviously, both human-time intensive and wouldn&#8217;t scale well. Other websites tried to copy this model and thus sprang many &#8216;portals&#8217;. The search result s of the day were no more than simple string matches. Most of the times, the results had nothing to do with the topic we were searching for. <br />
+The efficacy of the search engine was limited by these two factors: <br />
+1. Indexing of web pages by humans was not scalable to keep up with the explosion of new websites. <br />
+2. Search was brutal and used no human &#8216;intelligence&#8217;</p>
+
+	<p>Google came on to the scene with a simple intention of making search easy and useful. They solved both the above problems by <br />
+1. Index every possible page out there (They have one of the most awesome hardware setups in the world)<br />
+2. Use &#8216;human&#8217; intelligence contained in the pages themselves to improve the search result. </p>
+
+	<p>So, what is this human intelligence we are talking about?<br />
+Every time we create a page, say  &#8220;Kannada Plays&#8221; , we link to various other pages,  which contain information related to the topic at hand. By doing this we are increasing the information contained in our wep page, as well affirming our faith in the referred page as being another source of useful information. Google uses this idea to &#8220;Rank&#8221; websites based on their popularity. </p>
+
+	<p>Google&#8217;s approach to search  in-a-way helped make the internet a better place. At least till the &#8216;90%&#8217; caught on. Google liked well structured documents, well linked documents, clean URL&#8217;s and those pages which tried to be <a href="http://www.w3c.org">standard compliant</a>.  A lot of Search Engine Optimisation(SEO) Companies sprang up to help websites to <a href="http://www.vaughns-1-pagers.com/internet/google-ranking-factors.htm">gain visibility on google</a> .  And they made a lot of money on it too. Where ever there is money, greed soon follows. That is manifesting today in form of blog spam, trackback spam and of late <a href="http://clsc.net/research/google-302-page-hijack.htm">302 page hijack</a> scams. Google is very competitive and the search game is gettting hotter every day with yahoo! and MSN upping their ante. Search is serious business today with billions of dollars in revenue for both search companies and the advertisers. In the internet age,  losing visibility <em>is</em>  death. So, people will do anything to increase their presence (pagerank?). Where does this leave the ordinary user vis-a-vis finding genuine information?  Is there a way out of this seemingly endless cat and mouse game?   is there a better way to find useful information other than to use google/yahoo/msn? </p>
+
+	<p>Yes, and that is <a href="http://del.icio.us">del.icio.us</a> . This site is a masterful execution of one simple idea; the idea that &#8211; people like to bookmark what they like, and if there is a way to know what other people are reading on the internet on the same subject, we are increasing the &#8216;intelligence&#8217; of the system as a whole.  There are two basic ways you can use del.icio.us. </p>
+
+	<p>1. Use it to store information on useful links, by assigning them &#8216;tags&#8217;. Basically this would allow you to recall any pages by just typing http://del.icio.us/tag/subject . This eliminates any need for you to store the web pages on your hard disk and there is no worry about having to writing down the URL for future reference. This is called &#8216;tag surfing&#8217;</p>
+
+	<p>2. Look up people with similar interest. If you notice that 10 other people have bookmarked the same page on an esoteric subject as you, you might want to take a look at what <em>they</em> are reading. Its akin to reading the &#8216;mind&#8217; without even having to know them! [I agree, that is a little paranoid :)]</p>
+
+	<p>Today, when I want to learn  more about a particular topic, I still use google. But, the aha! finds are usually from del.icio.us. Does it mean delicious is the answer to our search woes? It seems so for forseeable amount of time. Long run? well.. as John Keynes put it ,&#8221;In the long run, we are all dead&#8221;. No, the popularity and success of del.icio.us will see &#8216;link spam&#8217; become a problem. But, again, the solution lies with us and not the system.</p>
+
+	<p>In real world, we trust information from people we know. In future, when link spam becomes a serious issue, we may limit our tag surfing to our friends (real and virtual) and their friends. The concept of friends of friends will keep some areas of the &#8216;semantic web&#8217; hygenic and useful. </p>
+
+	<p>The human intelligence has made a come back into the search game. Interestingly, the technology behind  del.icio.us uses the age old social-networking idea to find things faster. Its all in the &#8216;connections&#8217; you know. </p>
+
+
+ <hr/><i>no comments</i></body></html>

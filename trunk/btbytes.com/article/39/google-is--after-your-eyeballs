@@ -1,0 +1,23 @@
+<html>
+				<head>
+				<style type="text/css">@import "/css/archive.css";</style>
+				<title>Google is  after your eyeballs</title>
+				</head>				
+				<body><div id="archive-main">
+				<div id="archive-header">
+				<p>			
+				<a href="http://btbytes.com">Home</a>
+				</p>
+				</div> 
+				<h1>Google is  after your eyeballs</h1>
+				
+					<p>Google announced <a href="http://code.google.com">code.google.com</a>. Initially I thought google has come up with somthing like freshmeat, wherein you could search for FOSS projects (googlified freshmeat.net ?). Its not. code.google.com is a place where you can find  the Open Source projects being developed at google.  </p>
+ It turns out that google does not want to be left out of the web API mindshare of developers.  If you recall, recently Yahoo opened up their web API&#8221;s at <a href="http://developer.yahoo.com">developer.yahoo.com</a> . Google does not want all the &#8220;external developers&#8221; to start using Yahoo! API&#8217;s to create nifty applications. <br />
+Yahoo has been quite nimble on its feet these days, with the release of developer.yahoo.com, video search and of course the latest &#8220;360&#8221;.  
+
+	<p>Coming back to code.google.com, <a href="http://goog-goopy.sourceforge.net/">goopy</a> look s very interesting. goopy is a python module for  <strong>functional</strong> style  programming.  I&#8217;ll try to bang out some useful  stuff using this module. :)</p>
+
+
+
+
+ <hr/><i>no comments</i></body></html>

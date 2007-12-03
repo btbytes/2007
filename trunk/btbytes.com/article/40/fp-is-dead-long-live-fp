@@ -1,0 +1,28 @@
+<html>
+				<head>
+				<style type="text/css">@import "/css/archive.css";</style>
+				<title>FP is dead! long Live FP!!</title>
+				</head>				
+				<body><div id="archive-main">
+				<div id="archive-header">
+				<p>			
+				<a href="http://btbytes.com">Home</a>
+				</p>
+				</div> 
+				<h1>FP is dead! long Live FP!!</h1>
+				
+					<p><p>
+<a href="http://www.writeiq.com/2005/03/goodbye-to-map-lambda-reduce-and.html">Ramdas</a> , pointed out that Guido wants to <a href="http://www.artima.com/weblogs/viewpost.jsp?thread=98196">do away</a>  with Functional programming elements of Python like <tt>map</tt>,<tt>filter</tt> and <tt>lambda</tt> in Python 3000. 
+I agree with him that [hmm.. I guess there is no other way, after all he is the BDFL :)] filters can be easily replaced by list comprehensions.  He then goes on to show how, using generator expressions we can solve the same problems much more elegently. 
+<txp:glx_code file="3" />
+</p>
+<p>This brings me to <a href="http://goog-goopy.sourceforge.net/">google goopy</a>  ,a collection of <em>functional</em> functions, which was released under open source licece early today @ <a href="http://code.google.com">code.google.com</a> . 
+Goopy implements <pre>some(f, lst) -&gt; true if F applied to some element of LST is true</pre> and <pre>every(f, lst) -&gt; true if F applied to every element of LST is true</pre> which are the same similar to the functionality provided by <tt>any</tt> and <tt>all</tt>. </p><p>
+<strong>some</strong>
+<txp:glx_code file="1" />
+<strong>every</strong>
+<txp:glx_code file="2" /></p><p>The generator expressions usage looks cleaner, more <em>pythonic</em> .
+Ah! well, it makes sense to do FP in LISP, anyway. <a href="http://www.drscheme.org">Dr.Scheme</a> here I come.</p>    </p>
+
+
+ <hr/><i>no comments</i></body></html>
