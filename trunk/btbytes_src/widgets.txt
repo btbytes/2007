@@ -1,0 +1,17 @@
+restindex
+    crumb: Widgets
+    format: html
+    page-title: Widget mania!
+/restindex
+
+<div style="width:400px; position: relative;">
+<object width="400" height="213" type="application/x-shockwave-flash" data="http://www.travbuddy.com/flash/countries_map.swf?id=1996206" height="213" width="400">
+<param name="movie" value="http://www.travbuddy.com/flash/countries_map.swf?id=1996206" />
+<param name="quality" value="high" /><param name="bgcolor" value="#372060" />
+<embed src="http://www.travbuddy.com/flash/countries_map.swf?id=1996206" quality="high" bgcolor="#372060" width="400" height="213" type="application/x-shockwave-flash"></embed>
+</object>
+<div style="background-color: #372060; text-align: center; width: 399px; border-left: 1px solid #372060;">
+<a href="http://www.travbuddy.com/widget_map.php"><img src="http://www.travbuddy.com/images/widget_map_promote.gif" border="0"></a>
+</div>
+</div>
+
