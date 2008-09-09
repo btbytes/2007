@@ -27,7 +27,10 @@ def main(n):
 
 
 if __name__ == "__main__":
-  for n in [1000, 10000, 100000, 1000000, 10000000]:
+    n  = 1000000000
     st = time.time()
     cnt = main(n)
     print n, time.time() - st, cnt
+    #1000000000 9826.42385912 608720
+    #Answer: 608720
+    #Time taken: nearly 2 hours and 43 minutes on my Macbook
